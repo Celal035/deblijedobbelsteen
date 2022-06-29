@@ -1,0 +1,134 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#startknop{
+    height: 100px;
+    width: 100px;
+    background-color: grey;
+    display: flex;
+}
+
+/*#extraCardKnop{*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    background-color: grey;*/
+/*}*/
+#startknop>p{
+    align-self: center;
+    margin: auto;
+}
+
+#game{
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    /*padding: 10px;*/
+    background-color: lightgrey;
+    display: grid;
+    justify-content: center;
+    /*margin: 20px;*/
+    grid-template-columns: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px 2px;
+    grid-area: game;
+    grid-auto-flow: row;
+    grid-template-areas:
+                  "div0 div1 div2 div3 div4 div5"
+                  "div6 div7 div8 div9 div10 div11";
+}
+
+#card0 {
+    rid-area: div0;
+    display: flex;
+    justify-content: center;
+}
+#card1 {
+    grid-area: div1;
+    display: flex;
+    justify-content: center;}
+#card2 {
+    grid-area: div2;
+    display: flex;
+    justify-content: center;}
+#card3 {
+    grid-area: div3;
+    display: flex;
+    justify-content: center;}
+#card4 {
+    grid-area: div4;
+    display: flex;
+    justify-content: center;}
+#card5 {
+    grid-area: div5;
+    display: flex;
+    justify-content: center}
+#card6 {
+    grid-area: div6;
+    display: flex;
+    justify-content: center;}
+#card7 {
+    grid-area: div7;
+    display: flex;
+    justify-content: center;}
+#card8 {
+    grid-area: div8;
+    display: flex;
+    justify-content: center;}
+#card9 {
+    grid-area: div9;
+    display: flex;
+    justify-content: center}
+#card10 {
+    grid-area: div10;
+    display: flex;
+    justify-content: center;}
+#card11 {
+    grid-area: div11;
+    display: flex;
+    justify-content: center;}
+
+
+#container {
+    width: 100%;
+    height: 100%;
+    border-left: 1px solid #4ab8e3;
+    border-top: 1px solid #4ab8e3;
+    border-bottom: 1px solid #4ab8e3;
+    background-color: rgb(239, 244, 248);
+    border-width: 13px;
+    display: grid;
+    padding: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+                "title title title title"
+                "game game game game"
+                "game game game game";
+}
+
+#score{
+    border-right: 1px solid #4ab8e3;
+    border-top: 1px solid #4ab8e3;
+    border-bottom: 1px solid #4ab8e3;
+    background-color: rgb(239, 244, 248);
+    border-width: 13px;
+}
+
+#title { grid-area: title; }
+
+#test{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#game>div>img{
+    border-radius: 5px;
+}
+
+
+
