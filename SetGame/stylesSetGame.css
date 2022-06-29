@@ -18,7 +18,7 @@ body {
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-        "menu menu menu menu menu menu"
+        "menuleft menuleft menu menu menuright menuright"
         "left main main main rightleft right"
         "left main main main rightleft right"
         "left main main main rightleft right";
@@ -27,28 +27,40 @@ body {
 .menu {
     grid-area: menu;
 }
-
-#container {
-    grid-area: main;
-    background-color: white;
-
-}
-
-#score {
-    grid-area: rightleft;
+#logolinksdiv{
+    height: 63px;
+    grid-area: menuleft;
+    overflow: hidden;
     text-align: center;
-    padding: 15px;
+    border-top: 1px solid #4ab8e3;
+    border-bottom: 1px solid #4ab8e3;
+    background-color: rgb(71, 138, 193);
+    padding: 5px;
 }
 
-.left {
-    grid-area: left;
+#logolinks {
+    background-image: url("../blije_dobbelsteen_logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 53px;
+
+}
+#logorechts{
+    grid-area: menuright;
+    overflow: hidden;
+    text-align: center;
+    border-top: 1px solid #4ab8e3;
+    border-bottom: 1px solid #4ab8e3;
+    background-color: rgb(71, 138, 193);
+    height: 63px;
 
 }
 
 .menu {
     overflow: hidden;
     text-align: center;
-    border: 1px solid #4ab8e3;
+    border-top: 1px solid #4ab8e3;
+    border-bottom: 1px solid #4ab8e3;
     background-color: rgb(71, 138, 193);
     height: 63px;
 }

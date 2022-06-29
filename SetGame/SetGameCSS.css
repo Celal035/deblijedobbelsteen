@@ -18,6 +18,7 @@ body {
 #startknop>p{
     align-self: center;
     margin: auto;
+    border-radius: 5px;
 }
 
 #game{
@@ -130,5 +131,21 @@ body {
     border-radius: 5px;
 }
 
+#container {
+    grid-area: main;
+    background-color: white;
+
+}
+
+#score {
+    grid-area: rightleft;
+    text-align: center;
+    padding: 15px;
+}
+
+.left {
+    grid-area: left;
+
+}
 
 
