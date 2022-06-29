@@ -131,6 +131,7 @@ li {
     border: 1px solid #4ab8e3;
     background-color: rgb(239, 244, 248);
     border-width: 13px;
+    text-align: center;
 
 }
 
@@ -141,13 +142,13 @@ li {
     width: 30%;
 }
 
-.formulier{
-    position: relative;
-    left: 60%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    top: 10%;
-}
+/*.formulier{*/
+/*    position: relative;*/
+/*    left: 60%;*/
+/*    margin-top: 10%;*/
+/*    margin-bottom: 10%;*/
+/*    top: 10%;*/
+/*}*/
 
 .fname{
     width: 30%; /* Full width */
@@ -186,4 +187,64 @@ input[type=submit] {
 
 label {
     font-family: Comic Sans MS;
+}
+
+#form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "title title title title"
+    "foto form form form"
+    "foto form form form";
+}
+
+#formulier{
+    grid-area: form;
+    margin-top: 4.5rem;
+}
+#foto{
+    grid-area: foto;
+}
+#title{
+    grid-area: title;
+}
+
+.main>p{
+    margin-top: 5rem;
+    font-family: Comic Sans MS;
+}
+
+.main>div>a{
+    font-family: Comic Sans MS;
+}
+
+.containerForGames {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+    "SET SNAKE";
+}
+#SET {
+    grid-area: SET;
+    background-image: url("Plaatjes/SETGAMEplaatje.jpeg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 18rem;
+    height: 18rem;
+}
+
+#SNAKE {
+    grid-area: SNAKE;
+    /*VOEG HIER NOG EVEN JE STYLING VAN HET PLAATJE TOE, WORDT ALS HET GOED IS AL GECENTERED*/
+}
+
+.SETPOS{
+    display: flex;
+    justify-content: center;
+
 }

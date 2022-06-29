@@ -170,3 +170,12 @@ input[type=submit] {
 label {
     font-family: Comic Sans MS;
 }
+
+
+.main{
+    text-align: center;
+}
+
+#score{
+    font-family: Comic Sans MS;
+}

@@ -591,7 +591,7 @@ function checkAll(){
 
 
 function puntenSysteem(){
-    if(scorePlayer === 1) {
+    if(scorePlayer === 5) {
         alert('Goed gedaan, je hebt gewonnen');
         //Verwijderd de game menu, om terug te gaan naar het menu
         scorePlayer = 0;
