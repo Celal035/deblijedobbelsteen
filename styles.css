@@ -240,6 +240,11 @@ label {
 
 #SNAKE {
     grid-area: SNAKE;
+    background-image: url("snakegame/snakeplaatje.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 18rem;
+    height: 18rem;
     /*VOEG HIER NOG EVEN JE STYLING VAN HET PLAATJE TOE, WORDT ALS HET GOED IS AL GECENTERED*/
 }
 
@@ -247,4 +252,7 @@ label {
     display: flex;
     justify-content: center;
 
+}
+#score{
+    font-family: Comic Sans MS;
 }
