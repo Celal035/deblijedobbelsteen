@@ -151,8 +151,8 @@ li {
 /*}*/
 
 .fname{
-    width: 30%; /* Full width */
-    padding: 6px; /* Some padding */
+    width: 60%; /* Full width */
+    padding: 20px; /* Some padding */
     font-family: Comic Sans MS;
     border: 1px solid #ccc; /* Gray border */
     border-radius: 20px; /* Rounded borders */
@@ -174,8 +174,8 @@ input[type=submit] {
     font-family: Comic Sans MS;
   }
   .vragen{
-    width: 30%; /* Full width */
-    padding: 6px; /* Some padding */
+    width: 60%; /* Full width */
+    padding: 15px; /* Some padding */
     border: 1px solid #ccc; /* Gray border */
     border-radius: 20px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
@@ -187,6 +187,7 @@ input[type=submit] {
 
 label {
     font-family: Comic Sans MS;
+    font-size: 41px;
 }
 
 #form {
@@ -203,6 +204,8 @@ label {
 #formulier{
     grid-area: form;
     margin-top: 4.5rem;
+    width: 100%;
+    margin-left: 10%;
 }
 #foto{
     grid-area: foto;
@@ -266,4 +269,14 @@ label {
 
 .gebouw img{
  width: 26rem;
+}
+
+.voorpagina p {
+    color: black;
+    font-size: 20px;
+    position: relative;
+    top: 3rem;
+    left: 12rem;
+    font-family: Dubai;
+
 }
