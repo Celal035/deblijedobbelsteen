@@ -256,3 +256,14 @@ label {
 #score{
     font-family: Comic Sans MS;
 }
+
+.insta img {
+    width: 30px;
+}
+.face img {
+    width: 30px;
+}
+
+.gebouw img{
+ width: 26rem;
+}
