@@ -1,4 +1,4 @@
-</html><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -19,7 +19,15 @@
         #score {
             text-align: right;
             font-size: 140px;
+            font-family: "Comic Sans MS";
         }
+        #score>a{
+            font-size: 20px;
+        }
+        #scorescore{
+            font-family: "Comic Sans MS";
+        }
+
     </style>
 </head>
 
@@ -42,7 +50,10 @@
         </section>
     </div>
     <div class="main">
-        <div id="score">0</div>
+        <div id="score">
+            <a href="../Spelregels.html">Klik hier voor de spelregels!</a><br>
+            <p id="scorescore">0</p>
+        </div>
         <canvas id="snakeboard" width="500" height="500"></canvas>
     </div>
     <div class="right"></div>
@@ -180,7 +191,7 @@
         const has_eaten_food = snake[0].x === food_x && snake[0].y === food_y;
         if (has_eaten_food) {
             score += 10;
-            document.getElementById('score').innerHTML = score;
+            document.getElementById('scorescore').innerHTML = score;
             gen_food();
         } else {
             snake.pop();
